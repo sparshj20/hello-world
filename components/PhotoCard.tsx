@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 export interface PhotoData {
   id: number;
@@ -13,6 +13,16 @@ export interface PhotoData {
 
 export default function PhotoCard({ photo }: { photo: PhotoData }) {
   const [flipped, setFlipped] = useState(false);
+  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  function clearHoverTimer() {
+    if (timerRef.current) {
+      clearTimeout(timerRef.current);
+      timerRef.current = null;
+    }
+  }
+
+  useEffect(() => clearHoverTimer, []);
 
   return (
     <div
@@ -22,8 +32,17 @@ export default function PhotoCard({ photo }: { photo: PhotoData }) {
         aspectRatio: "1",
         borderRadius: "6px",
       }}
-      onMouseLeave={() => setFlipped(false)}
-      onClick={() => setFlipped((f) => !f)}
+      onMouseEnter={() => {
+        timerRef.current = setTimeout(() => setFlipped(true), 2000);
+      }}
+      onMouseLeave={() => {
+        clearHoverTimer();
+        setFlipped(false);
+      }}
+      onClick={() => {
+        clearHoverTimer();
+        setFlipped((f) => !f);
+      }}
       role="button"
       tabIndex={0}
       aria-label={`${photo.caption} — click to see details`}
