@@ -33,7 +33,7 @@ export default function PhotoCard({ photo }: { photo: PhotoData }) {
         borderRadius: "6px",
       }}
       onMouseEnter={() => {
-        timerRef.current = setTimeout(() => setFlipped(true), 2000);
+        timerRef.current = setTimeout(() => setFlipped(true), 800);
       }}
       onMouseLeave={() => {
         clearHoverTimer();
