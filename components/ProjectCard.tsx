@@ -5,14 +5,15 @@ interface ProjectCardProps {
   title: string;
   year: number;
   summary: string;
+  isLast?: boolean;
 }
 
-export default function ProjectCard({ slug, title, year, summary }: ProjectCardProps) {
+export default function ProjectCard({ slug, title, year, summary, isLast }: ProjectCardProps) {
   return (
     <Link
       href={`/work/${slug}`}
       className="block py-4 group"
-      style={{ borderBottom: "1px solid var(--color-border)" }}
+      style={{ borderBottom: isLast ? "none" : "1px solid var(--color-border)" }}
     >
       <div className="flex items-baseline justify-between gap-4">
         <span
