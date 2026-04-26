@@ -38,16 +38,11 @@ export default function HomePage() {
             company="PayU"
             description={
               <>
-                Led growth products processing $2Bn GTV annually — affordability, EMIs, pay later,
-                credit lines, offers and loyalty. Pioneered India's first certified 3DS SDK — piloted
-                with Swiggy and CRED, improving card success rates by 200 bps, and spearheaded 3DS
-                Server certification across Visa and Mastercard. Built split payments module and an
-                in-house A/B platform. Reduced refund TAT from 2 hours to 5 minutes at peak 200 QPS.
-                See{" "}
+                Growth and core payments — $2Bn GTV across affordability & EMI,{" "}
                 <Link href="/work/reorder-discovery" className="text-link">
-                  case study
+                  loyalty & offers
                 </Link>
-                .
+                , and frictionless card payments.
               </>
             }
           />
