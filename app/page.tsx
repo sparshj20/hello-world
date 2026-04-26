@@ -42,6 +42,7 @@ export default function HomePage() {
             role="Associate PM"
             company="Grofers"
             description="Onboarding and activation; cut drop-off by 30% in first 90 days."
+            isLast
           />
         </div>
       </section>
