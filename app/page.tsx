@@ -1,6 +1,5 @@
 import Link from "next/link";
 import ExperienceItem from "@/components/ExperienceItem";
-import ExperienceGroup from "@/components/ExperienceGroup";
 
 export default function HomePage() {
   return (
@@ -33,51 +32,31 @@ export default function HomePage() {
             description="Building supply chain products — first mile operations, brand experience, and merchant payments."
           />
 
-          <ExperienceGroup
+          <ExperienceItem
             years="2021 – 2024"
+            role="Senior Product Manager"
             company="PayU"
-            roles={[
-              {
-                title: "Senior Product Manager",
-                years: "2023 – 2024",
-                description: (
-                  <>
-                    Led growth products processing $2Bn GTV annually — affordability, EMIs,
-                    pay later, credit lines, offers and loyalty. Managed a team of PMs and analysts.
-                    See{" "}
-                    <Link href="/work/reorder-discovery" className="text-link">
-                      case study
-                    </Link>
-                    .
-                  </>
-                ),
-              },
-              {
-                title: "Product Manager",
-                years: "2021 – 2023",
-                description:
-                  "Pioneered India's first certified 3DS SDK — piloted with Swiggy and CRED, improving card success rates by 200 bps. Spearheaded 3DS Server certification across Visa and Mastercard. Built split payments module and an in-house A/B platform. Reduced refund TAT from 2 hours to 5 minutes at peak 200 QPS.",
-              },
-            ]}
+            description={
+              <>
+                Led growth products processing $2Bn GTV annually — affordability, EMIs, pay later,
+                credit lines, offers and loyalty. Pioneered India's first certified 3DS SDK — piloted
+                with Swiggy and CRED, improving card success rates by 200 bps, and spearheaded 3DS
+                Server certification across Visa and Mastercard. Built split payments module and an
+                in-house A/B platform. Reduced refund TAT from 2 hours to 5 minutes at peak 200 QPS.
+                See{" "}
+                <Link href="/work/reorder-discovery" className="text-link">
+                  case study
+                </Link>
+                .
+              </>
+            }
           />
 
-          <ExperienceGroup
+          <ExperienceItem
             years="2020 – 2021"
+            role="Associate Product Manager"
             company="Cashfree Payments"
-            roles={[
-              {
-                title: "Associate Product Manager",
-                years: "Oct 2020 – Sep 2021",
-                description:
-                  "Scaled payouts to 99.5% success rate and 1000 TPS. Conceptualised and delivered India's first RBI-selected cross-border payments MVP (RBI 2nd Cohort). Built fraud detection and AML checks for e-collect, and launched Banking as a Service — Accounts Suite.",
-              },
-              {
-                title: "Product Analyst",
-                years: "Feb – Sep 2020",
-                description:
-                  "Analytics and product instrumentation across payout rails — set up dashboards, KPIs, and worked with the data team to instrument metrics for user behaviour analysis.",
-              },
-            ]}
+            description="Scaled payouts to 99.5% success rate and 1000 TPS. Conceptualised and delivered India's first RBI-selected cross-border payments MVP (RBI 2nd Cohort). Built fraud detection and AML checks for e-collect, and launched Banking as a Service — Accounts Suite."
           />
 
           <ExperienceItem
