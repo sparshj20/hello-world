@@ -51,7 +51,7 @@ export default function HomePage() {
             years="2020 – 2021"
             role="Associate Product Manager"
             company="Cashfree Payments"
-            description="Scaled payouts to 99.5% success rate and 1000 TPS. Conceptualised and delivered India's first RBI-selected cross-border payments MVP (RBI 2nd Cohort). Built fraud detection and AML checks for e-collect, and launched Banking as a Service — Accounts Suite."
+            description="Payments infrastructure — payouts at 99.5% success rate, India's first RBI-cohort cross-border MVP, and Banking as a Service launch."
           />
 
           <ExperienceItem
