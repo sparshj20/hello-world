@@ -1,9 +1,11 @@
 export default function Footer() {
   return (
     <footer className="footer">
-      <span className="footer-name">Sparsh Jain</span>
-      <span className="footer-divider" aria-hidden="true">·</span>
-      <span className="footer-year">© {new Date().getFullYear()}</span>
+      <span style={{ display: "inline-flex", alignItems: "center", gap: "0.35rem" }}>
+        <span className="footer-name">Sparsh Jain</span>
+        <span className="footer-divider" aria-hidden="true">·</span>
+        <span className="footer-year">© {new Date().getFullYear()}</span>
+      </span>
 
       <div className="footer-links">
         <a

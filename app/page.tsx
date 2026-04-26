@@ -1,3 +1,4 @@
+import Link from "next/link";
 import ExperienceItem from "@/components/ExperienceItem";
 
 export default function HomePage() {
@@ -28,7 +29,7 @@ export default function HomePage() {
             years="2022 – now"
             role="Lead Product Manager"
             company="Blinkit (Zomato)"
-            description="Growth and consumer experience — reorder, discovery, retention."
+            description={<>Growth and consumer experience — <Link href="/work/reorder-discovery" className="text-link">reorder</Link>, discovery, retention.</>}
           />
           <ExperienceItem
             years="2020 – 2022"
