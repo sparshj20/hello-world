@@ -4,11 +4,13 @@ export default function HomePage() {
   return (
     <div className="max-w-2xl">
       <section className="mt-4 mb-12">
-        <h1 className="text-2xl font-semibold mb-4" style={{ color: "var(--color-ink)" }}>
-          Sparsh Jain
-        </h1>
+        <h1 className="site-name">Sparsh Jain</h1>
         <p className="leading-relaxed" style={{ color: "var(--color-muted)" }}>
-          Lead PM at Blinkit (Zomato), working on growth and consumer experience.
+          Lead PM at{" "}
+          <a href="https://blinkit.com" target="_blank" rel="noopener noreferrer" className="text-link">
+            Blinkit (Zomato)
+          </a>
+          , working on growth and consumer experience.
           Previously built products at scale across quick-commerce and fintech.
           I care about shipping things that measurably move people.
         </p>

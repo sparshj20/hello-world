@@ -18,12 +18,7 @@ export default function Nav() {
   }
 
   return (
-    <header className="flex items-center justify-between py-8">
-      {/* Logo — SJ initials, links to home */}
-      <Link href="/" className="nav-logo" aria-label="Home">
-        SJ
-      </Link>
-
+    <header className="py-8">
       <nav className="flex items-center gap-6">
         {links.map(({ href, label }) => (
           <Link
