@@ -41,3 +41,10 @@ export function getProject(slug: string): Project | null {
   const { data, content } = matter(raw);
   return { slug, content, ...data } as Project;
 }
+
+export function getNextProject(slug: string): ProjectMeta | null {
+  const all = listProjects();
+  const idx = all.findIndex((p) => p.slug === slug);
+  if (idx === -1) return null;
+  return all[(idx + 1) % all.length];
+}
