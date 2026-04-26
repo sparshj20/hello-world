@@ -5,9 +5,6 @@ export default function WorkPage() {
   const projects = listProjects();
   return (
     <div className="max-w-2xl">
-      <h1 className="text-2xl font-semibold mb-2" style={{ color: "var(--color-ink)" }}>
-        Work
-      </h1>
       <p className="mb-10" style={{ color: "var(--color-muted)" }}>
         Selected case studies from the last few years.
       </p>

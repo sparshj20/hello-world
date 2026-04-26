@@ -18,19 +18,17 @@ export default function Nav() {
   }
 
   return (
-    <header className="py-8">
-      <nav className="flex items-center gap-6">
-        {links.map(({ href, label }) => (
-          <Link
-            key={href}
-            href={href}
-            className={`nav-link ${isActive(href) ? "nav-link--active" : ""}`}
-          >
-            {isActive(href) && <span className="nav-dot" aria-hidden="true" />}
-            {label}
-          </Link>
-        ))}
-      </nav>
-    </header>
+    <nav className="flex items-center gap-6 mt-2">
+      {links.map(({ href, label }) => (
+        <Link
+          key={href}
+          href={href}
+          className={`nav-link ${isActive(href) ? "nav-link--active" : ""}`}
+        >
+          {isActive(href) && <span className="nav-dot" aria-hidden="true" />}
+          {label}
+        </Link>
+      ))}
+    </nav>
   );
 }
