@@ -31,7 +31,7 @@ html {
   font-family: var(--font-serif);
   font-size: 1.75rem;
   font-weight: 400;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--color-ink);
   margin-bottom: 1rem;

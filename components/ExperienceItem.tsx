@@ -1,8 +1,10 @@
+import { ReactNode } from "react";
+
 interface ExperienceItemProps {
   years: string;
   role: string;
   company: string;
-  description: string;
+  description: ReactNode;
 }
 
 export default function ExperienceItem({ years, role, company, description }: ExperienceItemProps) {
