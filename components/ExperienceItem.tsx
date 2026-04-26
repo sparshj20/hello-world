@@ -5,13 +5,14 @@ interface ExperienceItemProps {
   role: string;
   company: string;
   description: ReactNode;
+  isLast?: boolean;
 }
 
-export default function ExperienceItem({ years, role, company, description }: ExperienceItemProps) {
+export default function ExperienceItem({ years, role, company, description, isLast }: ExperienceItemProps) {
   return (
     <div
       className="flex gap-8 py-4"
-      style={{ borderBottom: "1px solid var(--color-border)" }}
+      style={{ borderBottom: isLast ? "none" : "1px solid var(--color-border)" }}
     >
       <span className="text-sm w-24 shrink-0 pt-0.5" style={{ color: "var(--color-muted)" }}>
         {years}
