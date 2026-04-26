@@ -12,8 +12,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className="max-w-3xl mx-auto px-6 min-h-screen">
-        <Nav />
-        <main>{children}</main>
+        <header className="pt-8 pb-2">
+          <p className="site-name">Sparsh Jain</p>
+          <Nav />
+        </header>
+        <main className="pt-8">{children}</main>
         <Footer />
       </body>
     </html>

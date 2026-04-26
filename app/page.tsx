@@ -4,8 +4,7 @@ import ExperienceItem from "@/components/ExperienceItem";
 export default function HomePage() {
   return (
     <div className="max-w-2xl">
-      <section className="mt-4 mb-12">
-        <h1 className="site-name">Sparsh Jain</h1>
+      <section className="mb-12">
         <p className="leading-relaxed" style={{ color: "var(--color-muted)" }}>
           Lead PM at{" "}
           <a href="https://blinkit.com" target="_blank" rel="noopener noreferrer" className="text-link">
