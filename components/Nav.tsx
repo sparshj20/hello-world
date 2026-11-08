@@ -5,8 +5,7 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { href: "/", label: "home" },
-  { href: "/work", label: "work" },
-  { href: "/misc", label: "misc" },
+  // work and misc are hidden until ready; restore these links to publish them.
 ];
 
 export default function Nav() {

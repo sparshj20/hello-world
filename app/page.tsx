@@ -1,4 +1,3 @@
-import Link from "next/link";
 import ExperienceItem from "@/components/ExperienceItem";
 
 export default function HomePage() {
@@ -38,11 +37,8 @@ export default function HomePage() {
             company="PayU"
             description={
               <>
-                Growth and core payments — $2Bn GTV across affordability & EMI,{" "}
-                <Link href="/work/reorder-discovery" className="text-link">
-                  loyalty & offers
-                </Link>
-                , and frictionless card payments.
+                Growth and core payments — $2Bn GTV across affordability & EMI,
+                loyalty & offers, and frictionless card payments.
               </>
             }
           />

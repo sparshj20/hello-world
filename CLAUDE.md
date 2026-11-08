@@ -14,7 +14,7 @@ Sparsh Jain's personal portfolio — a minimal, text-forward site built to land 
 |---|---|
 | Framework | Next.js 14 App Router + TypeScript |
 | Styling | Tailwind CSS + `@tailwindcss/typography` |
-| Hosting | Vercel free tier, auto-deploys from `main` |
+| Hosting | Cloudflare Workers free plan, static assets only (`wrangler.jsonc` serves the `out/` export), auto-deploys from `main`; `/work` and `/misc` redirect to `/` via `public/_redirects` |
 | Content | Markdown files in `content/work/*.md` |
 | Videos | YouTube unlisted embeds only (no self-hosted MP4s) |
 
