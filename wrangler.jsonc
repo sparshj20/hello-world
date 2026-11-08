@@ -1,0 +1,9 @@
+// Static-only Worker: serves the `next build` export in out/, no server code runs.
+{
+  "name": "hello-world",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page"
+  }
+}
